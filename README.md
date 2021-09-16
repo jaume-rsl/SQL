@@ -81,5 +81,5 @@ ORDER BY
   artist, 
   song;
 ```
-[LIKE BOOL and parenthesis](https://github.com/jaume-rsl/SQL/blob/3b7047004fc2c9a2219f4ba34f651bb9d791fa76/Screenshots/05%20-%20LIKE,%20BOOL%20and%20parenthesis%20combination.jpg)
+![LIKE BOOL and parenthesis](https://github.com/jaume-rsl/SQL/blob/3b7047004fc2c9a2219f4ba34f651bb9d791fa76/Screenshots/05%20-%20LIKE,%20BOOL%20and%20parenthesis%20combination.jpg)
 
