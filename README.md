@@ -1,6 +1,9 @@
 Table of contents:
 
 [Simple queries](#Simple-queries)
+[Sorted queries](#Sorted-queries)
+[Filtering queries](#Filtered-queries)
+
 
 # SQL
 
@@ -44,7 +47,7 @@ ORDER BY
 ```
 ![TOP N sorted](https://github.com/jaume-rsl/SQL/blob/a5f2b1378de02e5ced6b39a50f4ff5bb2b519843/Screenshots/03%20-%20Top%20N%20sorted.jpg)
 
-## Conditional (filtered) queries
+## Filtered queries
 ```SQL
 -- Select description, affected_customers and event date
 SELECT 
