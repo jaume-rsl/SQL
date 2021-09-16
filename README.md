@@ -1,7 +1,7 @@
-Table of contents:  
-[Simple queries](#Simple-queries)  
-[Sorted queries](#Sorted-queries)  
-[Filtering queries](#Filtered-queries)  
+# Table of contents:  
+1. [Simple queries](#Simple-queries)  
+2. [Sorted queries](#Sorted-queries)  
+3. [Filtering queries](#Filtered-queries)  
 
 
 # SQL
