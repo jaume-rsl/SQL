@@ -1,3 +1,6 @@
+Table of contents:
+Simple queries(#Simple queries)
+
 # SQL
 
 ## Simple queries
