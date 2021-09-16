@@ -1,5 +1,6 @@
 # SQL
 
+## Simple queries
 From an Eurovision festival dataset:
 ```SQL
 -- Return unique countries and use an alias
@@ -20,7 +21,7 @@ FROM
 ```
 ![TOP N %](https://github.com/jaume-rsl/SQL/blob/a5f2b1378de02e5ced6b39a50f4ff5bb2b519843/Screenshots/02%20-%20Top%20N%20percent.jpg)
 
-
+## Sorted queries
 From the power grid US outages dataset:
 ```SQL
 -- Select the top 20 rows from description, nerc_region and event_date
