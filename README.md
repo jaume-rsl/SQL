@@ -1,5 +1,6 @@
 Table of contents:
-Simple queries(#Simple queries)
+
+[Simple queries](#Simple-queries)
 
 # SQL
 
