@@ -1,6 +1,6 @@
 # SQL
 
-From an Euroovision festival dataset:
+From an Eurovision festival dataset:
 ```SQL
 -- Return unique countries and use an alias
   SELECT 
