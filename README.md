@@ -40,3 +40,20 @@ ORDER BY
 ```
 ![TOP N sorted](https://github.com/jaume-rsl/SQL/blob/a5f2b1378de02e5ced6b39a50f4ff5bb2b519843/Screenshots/03%20-%20Top%20N%20sorted.jpg)
 
+```SQL
+-- Select description, affected_customers and event date
+SELECT 
+  description, 
+  affected_customers,
+  event_date
+FROM 
+  grid 
+  -- The affected_customers column should be >= 50000 and <=150000   
+WHERE 
+  affected_customers BETWEEN 50000
+  AND 150000 
+   -- Define the order   
+ORDER BY 
+  event_date DESC;
+```
+![WHERE and ORDER BY](https://github.com/jaume-rsl/SQL/blob/57137a241952492ca81b3b93056e4cff5fb80d26/Screenshots/04%20-%20WHERE%20BETWEEN%20and%20SORTED.jpg)
