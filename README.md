@@ -7,7 +7,7 @@
 
 # SQL&nbsp;&nbsp;&nbsp; ![under_construction](https://github.com/jaume-rsl/jaume-rsl/blob/d2fe9e9e4d973e7dbbc99aa49dacb8dc324e8039/images/under_construction.png)
 
-##JOINS
+## JOINS
 ### INNER
 INNER with 3 tables
 ```SQL
