@@ -89,3 +89,26 @@ ORDER BY
 ```
 ![LIKE BOOL and parenthesis](https://github.com/jaume-rsl/SQL/blob/3b7047004fc2c9a2219f4ba34f651bb9d791fa76/Screenshots/05%20-%20LIKE,%20BOOL%20and%20parenthesis%20combination.jpg)
 
+
+Filtering AGGREGATE functions with HAVING
+```SQL
+SELECT 
+  country, 
+  COUNT (country) AS country_count, 
+  AVG (place) AS avg_place, 
+  AVG (points) AS avg_points, 
+  MIN (points) AS min_points, 
+  MAX (points) AS max_points 
+FROM 
+  eurovision 
+GROUP BY 
+  country 
+  -- The country column should only contain those with a count greater than 5 (aggregate func. with HAVING)
+HAVING 
+  COUNT(country) > 5 
+  -- Arrange columns in the correct order
+ORDER BY 
+  avg_place, 
+  avg_points DESC;
+```
+![HAVING](https://github.com/jaume-rsl/SQL/blob/c9cb6b3204c544b6542bee40a1eb7c025dcf0570/Screenshots/06%20-%20HAVING.jpg)
