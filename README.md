@@ -1,10 +1,10 @@
 # Table of contents:  
 1. [Simple queries](#Simple-queries)  
-2. [Sorted queries](#Sorted-queries)  
-3. [Filtering queries](#Filtered-queries)  
+  1. [Sorted queries](#Sorted-queries)  
+  2. [Filtering queries](#Filtered-queries)  
 
 
-# SQL
+# SQL&nbsp&nbsp&nbsp ![under_construction](https://github.com/jaume-rsl/jaume-rsl/blob/d2fe9e9e4d973e7dbbc99aa49dacb8dc324e8039/images/under_construction.png)
 
 ## Simple queries
 From an **Eurovision festival dataset**:
@@ -27,7 +27,7 @@ FROM
 ```
 ![TOP N %](https://github.com/jaume-rsl/SQL/blob/a5f2b1378de02e5ced6b39a50f4ff5bb2b519843/Screenshots/02%20-%20Top%20N%20percent.jpg)
 
-## Sorted queries
+### Sorted queries
 From the US **power grid outages** dataset:
 ```SQL
 -- Select the top 20 rows from description, nerc_region and event_date
@@ -46,7 +46,7 @@ ORDER BY
 ```
 ![TOP N sorted](https://github.com/jaume-rsl/SQL/blob/a5f2b1378de02e5ced6b39a50f4ff5bb2b519843/Screenshots/03%20-%20Top%20N%20sorted.jpg)
 
-## Filtered queries
+### Filtered queries
 ```SQL
 -- Select description, affected_customers and event date
 SELECT 
