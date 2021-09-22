@@ -1,10 +1,29 @@
 # Table of contents:  
+1. [JOINS](#joins)
 1. [Simple queries](#Simple-queries)  
     * [Sorted queries](#Sorted-queries)    
     * [Filtering queries](#Filtered-queries)    
 
 
 # SQL&nbsp;&nbsp;&nbsp; ![under_construction](https://github.com/jaume-rsl/jaume-rsl/blob/d2fe9e9e4d973e7dbbc99aa49dacb8dc324e8039/images/under_construction.png)
+
+##JOINS
+### INNER
+INNER with 3 tables
+```SQL
+SELECT track_id,
+-- Enter the correct table name prefix when retrieving the name column from the track table
+  track.name AS track_name,
+  title as album_title,
+  -- Enter the correct table name prefix when retrieving the name column from the artist table
+  artist.name AS artist_name
+FROM track
+  -- Complete the matching columns to join album with track, and artist with album
+INNER JOIN album on track.album_id = album.album_id 
+INNER JOIN artist on album.artist_id = artist.artist_id;
+```
+![INNER](https://github.com/jaume-rsl/SQL/blob/4888248ac4a8d66c015e5725a81152960e20c79c/Screenshots/07%20-INNER%20JOIN.jpg)
+
 
 ## Simple queries
 From an **Eurovision festival dataset**:
