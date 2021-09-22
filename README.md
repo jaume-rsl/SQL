@@ -1,7 +1,7 @@
 # Table of contents:  
 1. [Simple queries](#Simple-queries)  
-  * [Sorted queries](#Sorted-queries)  
-  * [Filtering queries](#Filtered-queries)  
+    * [Sorted queries](#Sorted-queries)    
+    * [Filtering queries](#Filtered-queries)    
 
 
 # SQL&nbsp;&nbsp;&nbsp; ![under_construction](https://github.com/jaume-rsl/jaume-rsl/blob/d2fe9e9e4d973e7dbbc99aa49dacb8dc324e8039/images/under_construction.png)
