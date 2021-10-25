@@ -4,6 +4,7 @@
     * [Sorted queries](#Sorted-queries)    
     * [Filtering queries](#Filtered-queries)    
 3. [Variables](#variables)
+4. [Temporary Tables](#temporary-tables)
 
 # SQL&nbsp;&nbsp;&nbsp; ![under_construction](https://github.com/jaume-rsl/jaume-rsl/blob/d2fe9e9e4d973e7dbbc99aa49dacb8dc324e8039/images/under_construction.png)
 
@@ -155,3 +156,23 @@ WHERE event_date BETWEEN @start AND @stop
 AND affected_customers >= @affected;
 ```
 ![Variables](https://github.com/jaume-rsl/SQL/blob/97134aa2875cb661f3c9f631a6cffa016189a880/Screenshots/08%20-%20Variables.jpg)
+
+## Temporary Tables
+```SQL
+SELECT  album.title AS album_title,
+  artist.name as artist,
+  MAX(track.milliseconds / (1000 * 60) % 60 ) AS max_track_length_mins
+-- Name the temp table #maxtracks
+INTO #maxtracks
+FROM album
+-- Join album to artist using artist_id
+INNER JOIN artist ON album.artist_id = artist.artist_id
+-- Join track to album using album_id
+INNER JOIN track ON track.album_id = album.album_id
+GROUP BY artist.artist_id, album.title, artist.name,album.album_id
+-- Run the final SELECT query to retrieve the results from the temporary table
+SELECT album_title, artist, max_track_length_mins
+FROM  #maxtracks
+ORDER BY max_track_length_mins DESC, artist;
+```
+![Temporary Tables](#https://github.com/jaume-rsl/SQL/blob/74e2182f350704573da859b2a52a4858298086f0/Screenshots/09%20-%20Temp%20Table.jpg)
