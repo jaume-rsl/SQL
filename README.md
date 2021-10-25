@@ -1,9 +1,9 @@
 # Table of contents:  
 1. [JOINS](#joins)
-1. [Simple queries](#Simple-queries)  
+2. [Simple queries](#Simple-queries)  
     * [Sorted queries](#Sorted-queries)    
     * [Filtering queries](#Filtered-queries)    
-
+3. [Variables](#variables)
 
 # SQL&nbsp;&nbsp;&nbsp; ![under_construction](https://github.com/jaume-rsl/jaume-rsl/blob/d2fe9e9e4d973e7dbbc99aa49dacb8dc324e8039/images/under_construction.png)
 
@@ -131,3 +131,27 @@ ORDER BY
   avg_points DESC;
 ```
 ![HAVING](https://github.com/jaume-rsl/SQL/blob/c9cb6b3204c544b6542bee40a1eb7c025dcf0570/Screenshots/06%20-%20HAVING.jpg)
+
+## Variables
+```SQL
+-- Declare your variables
+DECLARE @start DATE
+DECLARE @stop DATE
+DECLARE @affected INT;
+-- SET the relevant values for each variable
+SET @start = '2014-01-24'
+SET @stop  = '2014-07-02'
+SET @affected =  5000 ;
+
+SELECT 
+  description,
+  nerc_region,
+  demand_loss_mw,
+  affected_customers
+FROM 
+  grid
+-- Specify the date range of the event_date and the value for @affected
+WHERE event_date BETWEEN @start AND @stop
+AND affected_customers >= @affected;
+```
+![Variables](https://github.com/jaume-rsl/SQL/blob/97134aa2875cb661f3c9f631a6cffa016189a880/Screenshots/08%20-%20Variables.jpg)
