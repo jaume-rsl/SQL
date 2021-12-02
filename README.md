@@ -176,3 +176,14 @@ FROM  #maxtracks
 ORDER BY max_track_length_mins DESC, artist;
 ```
 ![Temporary Tables](https://github.com/jaume-rsl/SQL/blob/74e2182f350704573da859b2a52a4858298086f0/Screenshots/09%20-%20Temp%20Table.jpg)
+
+## Altering databases
+
+### Migrating data from a dataset
+
+```SQL
+-- Insert unique affiliations into affiliations blank table
+INSERT INTO affiliations 
+SELECT DISTINCT firstname, lastname, function, organization 
+FROM university_professors;
+```
