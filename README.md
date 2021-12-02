@@ -190,7 +190,7 @@ FROM university_professors;
 
 ### Changing datatypes (CAST)
 ```SQL
-SELECT transaction_date, amount + CAST(fee AS integer) AS net_amount 
+SELECT transaction_date, amount + CAST(fee AS integer) AS net_amount -- fee was a string in the beginning
 FROM transactions;
 ```
 ![CAST](https://github.com/jaume-rsl/SQL/blob/41778522040d906ef2800b9bd0a7fbfedab1eae1/Screenshots/10%20-%20CAST.jpg)
@@ -200,5 +200,5 @@ FROM transactions;
 ALTER TABLE professors 
 ALTER COLUMN firstname 
 TYPE varchar(16)
-USING SUBSTRING(firstname FROM 1 FOR 16); -- firstname truncated selectind char n.1 to char n.16
+USING SUBSTRING(firstname FROM 1 FOR 16); -- firstname truncated selecting char n.1 to char n.16
 ```
