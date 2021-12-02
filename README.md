@@ -179,8 +179,7 @@ ORDER BY max_track_length_mins DESC, artist;
 
 ## Altering databases
 
-### Migrating data from a dataset
-
+### Migrating data from a dataset to a dimension table
 ```SQL
 -- Insert unique affiliations into affiliations blank table
 INSERT INTO affiliations 
