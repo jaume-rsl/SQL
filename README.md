@@ -186,3 +186,10 @@ INSERT INTO affiliations
 SELECT DISTINCT firstname, lastname, function, organization 
 FROM university_professors;
 ```
+
+### Changing datatypes (CAST)
+```SQL
+SELECT transaction_date, amount + CAST(fee AS integer) AS net_amount 
+FROM transactions;
+```
+![CAST](https://github.com/jaume-rsl/SQL/blob/41778522040d906ef2800b9bd0a7fbfedab1eae1/Screenshots/10%20-%20CAST.jpg)
